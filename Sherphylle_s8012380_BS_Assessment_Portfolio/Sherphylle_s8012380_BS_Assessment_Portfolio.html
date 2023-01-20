@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Bootstrap</title>
+</head>
+
+<link href="css/styles.css" type="text/css" rel="stylesheet">
+<body data-spy="scroll" data-target="#navbar-site" data-offset="80">
+  <style>
+    img {
+      width: 200px;
+      height: 200px;
+      max-height: 200px;
+    }
+    body{
+      background-image: url("images/violin_piano_lessons.jpg");
+      width:100%;
+      height:100px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      /* background-color: rgba(71, 71, 71, 0.575); */
+    }
+    #changeheight{
+      width: 500%;
+      height: 500px;
+      max-height: 500px;
+    }
+  </style>
+
+
+  <nav id="navbar-site" class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top right">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Webpage Logo" style="width: 45px; height: 45px;"> Sherphylle Clapano s8012380
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#form">Form</a></li>
+        <li class="nav-item"><a class="nav-link" href="#table1">Table 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#carousel">Carousel</a></li>
+        <li class="nav-item"><a class="nav-link" href="#table2">Table 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#jumbo">Jumbotron</a></li>
+        <li class="nav-item"><a class="nav-link" href="#coll">Collapsible</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cards">Cards</a></li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#imgshapes">Image Shapes</a>
+            <a class="dropdown-item" href="#mod">Modal</a>
+            <a class="dropdown-item" href="#media">Media Objects</a>
+            <a class="dropdown-item" href="#Ttip">ToolTip</a>
+            <a class="dropdown-item" href="#pop">Popover</a>
+            <a class="dropdown-item" href="#footer">Footer</a>
+          </div>
+        </li>
+      </ul><!-- container -->
+    </div><!-- navbar-nav -->
+  </nav>
+
+
+  <div class="container mt-3" id="home">
+    <br> <br> <br>
+    <!-- ROW 1 -->
+    <h1><strong>Home</strong></h1><br/>
+    <h3>Pianists</h3>
+    <div class="row">
+      <section class="col">
+        <img src="images/pianistProfile/beethoven_pianist1.jpg" alt="Beethoven">
+        <h4>Ludwig Van Beethoven</h4>
+        <p>A German composer and pianist. Beethoven remains one of the most admired composers in the history of Western music; his works rank amongst the most performed of the classical music repertoire and span the transition from the Classical period to the Romantic era in classical music.</p>
+      </section>
+      <section class="col">
+        <img src="images/pianistProfile/mozart_pianist.jpg" alt="Mozart">
+        <h4>Wolfgang Amadeus Mozart</h4>
+        <p>Baptised as Joannes Chrysostomus Wolfgangus Theophilus Mozart, was a prolific and influential composer of the Classical period. Despite his short life, his rapid pace of composition resulted in more than 800 works of virtually every genre of his time.</p>
+      </section>
+      <section class="col">
+        <img src="images/pianistProfile/JohannesBrahms_pianist.jpg" alt="Brahms">
+        <h4>Johannes Brahms</h4>
+        <p>A German composer, pianist, and conductor of the mid-Romantic period. Born in Hamburg into a lutheran family, he spent much of his professional life in Vienna.</p>
+      </section>
+    </div><!-- row -->
+    <br/>
+    <!-- ROW 2 -->
+    <h3>Violinists</h3>
+    <div class="row">
+      <section class="col">
+        <img src="images/violinistProfile/Paganini_violinist.jpg" alt="Paganini">
+        <h4>Niccolò Paganini</h4>
+        <p>An Italian violinist and composer. He was the most celebrated violin virtuoso of his time, and left his mark as one of the pillars of modern violin technique.</p>
+      </section>
+      <section class="col">
+        <img src="images/violinistProfile/Vivaldi_violinist.jpg" alt="Vivaldi">
+        <h4>Antonio Lucio Vivaldi</h4>
+        <p>Was an Italian Baroque composer, virtuoso violinist, teacher, impresario, and Roman Catholic priest. Born in Venice, the capital of the Venetian Republic, Vivaldi is regarded as one of the greatest Baroque composers.</p>
+      </section>
+      <section class="col">
+        <img src="images/violinistProfile/Bartolomeo_Campagnoli.jpg" alt="Campagnoli">
+        <h4>Bartolomeo Campagnoli</h4>
+        <p>Was an Italian violinist and composer. Campagnoli was a virtuoso violinist who toured Europe propagating the 18th Century Italian violin style.</p>
+      </section>
+    </div><!-- row -->
+    <br> <br> <br> <br> <br>
+
+    <!-- -------------------------------------------------------------------------------------------- -->
+    <a id="form"></a><br><br><br>
+    <!-- START OF FORM EXERCISE -->
+    <section class="content">
+      <h1><strong>Feedback Form</strong></h1>
+      <p>If you find this page interesting and you'd like to leave your feedback, all you need is to fill out the following:</p>
+      <form>
+        <fieldset>
+          <legend>Contact Details</legend>
+          <label>Given name:<br/>
+          <input type="text" class="form-control" placeholder="e.g. Sherphylle" name="fname" size="30" maxlength="500"/></label><br/>
+          <label>Surname:<br/>
+          <input type="text" class="form-control" placeholder="e.g. Clapano" name="lname" size="30" maxlength="500"/></label><br/>
+          <label>Email:<br/>
+          <input type="text" class="form-control" placeholder="sherphylle.clapano@example.com" name="email" size="40" maxlength="900"></label><br/><br>
+          <legend>Comment</legend>
+          <label>Which musical piece is your favourite to play or listen to, and why?</label>
+          <textarea name="comment" class="form-control" placeholder="Enter text here..." cols="10" rows="5"></textarea><br/>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="accept"> I accept to abide by the terms and conditions of this site.
+            </label>
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="accept"> I accept that I will respect the Privacy and Policy of this site.
+            </label>
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="accept"> I understand that my personal information will be kept safe and secured by this site.
+            </label>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- END OF FORM EXERCISE -->
+    <br> <br> <br> <br> <br>
+    <!-- ----------------------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!-- START OF TABLE 1 EXERCISE -->
+    <a id="table1"></a>
+    <br><br><br>
+    <h1><strong>Birthdates Of These Well-known Classical Musicians</strong></h1>
+    <p>Separate table will be provided for Pianists and Violinist.</p>
+    <br/>
+    <h3>Pianists</h3>
+    <!-- First Table for Pianists -->
+    <table class="table table-bordered" background="images/crumpled-paper.jpg" width="100%" height="100px">
+      <thead class="thead-dark">
+        <tr>
+          <th>Firstname</th>
+          <th>Secondname</th>
+          <th>Lastname</th>
+          <th>Date of Birth</th> 
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ludwig</td>
+          <td>Van</td>
+          <td>Beethoven</td>
+          <td>December 1770</td>
+        </tr>
+        <tr>
+          <td>Wolfgang</td>
+          <td>Amadeus</td>
+          <td>Mozart</td>
+          <td>27th January 1756</td>
+        </tr>
+        <tr>
+          <td>Johannes</td>
+          <td>-</td>
+          <td>Brahms</td>
+          <td>7th May 1833</td>
+        </tr>
+      </tbody>
+    </table>
+    <br/>
+    <h3>Violinists</h3>
+    <!-- Second Table for Violinists -->
+    <table class="table table-bordered" background="images/crumpled-paper.jpg" width="100%" height="100px">
+      <thead class="thead-dark">
+        <tr>
+          <th>Firstname</th>
+          <th>Secondname</th>
+          <th>Lastname</th>
+          <th>Date of Birth</th>
+        </tr>
+        <tr>
+          <td>Niccolò</td>
+          <td>-</td>
+          <td>Paganini</td>
+          <td>27 October 1782</td>
+        </tr>
+        <tr>
+          <td>Antonio</td>
+          <td>Lucio</td>
+          <td>Vivaldi</td>
+          <td>4th March 1678</td>
+        </tr>
+        <tr>
+          <td>Bartolomeo</td>
+          <td>-</td>
+          <td>Campagnoli</td>
+          <td>10th September 1751</td>
+        </tr>
+      </thead>
+    </table>
+
+    <!-- END OF TABLE 1 EXERCISE -->
+    <br/><br/><br/><br><br>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <a id="carousel"></a><br><br><br>
+    <h1><strong>Carousel of Photos</strong></h1><br>
+    <div class="row"> <!-- Use a Grid to place Carousel in to display it in the middle. -->
+      <div class="col"></div>
+      <div class="col-6">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+            <li data-target="#demo" data-slide-to="6"></li>
+            <li data-target="#demo" data-slide-to="7"></li>
+          </ul>
+
+          <!-- The Slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img id="changeheight" src="images/sydney_opera_house.jpg" alt="Sydney Opera House" class="img-thumbnail">
+              <div class="carousel-caption">
+                <h4 style="color: #66ffff"><strong>Sydney Opera House</strong></h4>
+                <p>Performing arts centre</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="changeheight" src="images/sydney_opera_house_internalview.jpg" alt="Indoor Theatre" class="img-thumbnail">
+              <div class="carousel-caption">
+                <h4 style="color: #66ffff"><strong>Internal View</strong></h4>
+                <p>One of Opera House's interior theatre designs.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="changeheight" src="images/Grand-Piano.jpg" alt="Grand Piano" class="img-thumbnail">
+              <div class="carousel-caption">
+                <h4 style="color: #66ffff"><strong>Grand Piano</strong></h4>
+                <p>Offers a much more refined playing experience that upright pianos or digital keyboards.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="changeheight" src="images/vintage-old-music-sheets.jpg" alt="Piano Music Sheet" class="img-thumbnail">
+              <div class="carousel-caption">
+                <h4 style="color: #66ffff"><strong>Piano Music Sheet</strong></h4>
+                <p>Their music sheets consists of a Treble clef and a Bass clef.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="changeheight" src="images/Violin_played.jpg" alt="Violin Player" class="img-thumbnail">
+              <div class="carousel-caption">
+                <h4 style="color: #66ffff"><strong>Violin Player</strong></h4>
+                <p>A nice photography of a violinist performing.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="changeheight" src="images/vintage-old-violin-musicsheet.jpg" alt="Violin Music Sheet" class="img-thumbnail">
+              <div class="carousel-caption">
+                <h4 style="color: #66ffff"><strong>Vioin Music Sheet</strong></h4>
+                <p>A violin's music sheet consists of only a Treble Clef.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="changeheight" src="images/violin_aesthetic.jpg" alt="Aesthetic Violin Wallpaper" class="img-thumbnail">
+              <div class="carousel-caption">
+                <h4 style="color: #66ffff;"><strong>Violin Wallpaper</strong></h4>
+                <p>Nice aesthetic photography of a violin and its old vintage-looking music sheets.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img id="changeheight" src="images/display-logo-carousel.png" alt="Logo image" class="img-thumbnail">
+              <div class="carousel-caption">
+                <h4 style="color: #66ffff;"><strong>Logo</strong></h4>
+                <p>Welcome to the world of class. Here is a clear view of this webpage's logo.</p>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+          <!-- Left & Right Controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+
+      </div>
+      <div class="col"></div>
+    </div>
+    <br><br><br><br><br>
+    <!-- END OF CAROUSEL EXERCISE -->
+    <!-- ----------------------------------------------------------------------- -->
+   
+    <!-- Table 2 exercise -->
+    <a id="table2"></a><br><br><br>
+    <h1><strong>Table 2</strong></h1>
+    <p>Instrumental price range.</p>
+    <table class="table table-dark table-hover" style="color: #ffffff;">
+      <thead>
+        <tr>
+          <th>Instruments</th>
+          <th>Type of Family Instruments</th>
+          <th>Price range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Flute</td>
+          <td>Woodwind instrument</td>
+          <td>Beginner flutes usually ranges from $500-$1,000. Intermediate; $1,400-2,500. Entry-level pro flutes; $2,500+.</td>
+        </tr>
+        <tr>
+          <td>Piano</td>
+          <td>Percussion instrument</td>
+          <td>Upright piano; $3,000-$6,500 on average. High-end upright pianos; $10,000-$25,000. Entry-level grand piano; $7,000-$30,000. High-end grand pianos; $65,000-$190,000 (e.g. Steinway, Bosendorfer, and Yamaha).</td>
+        </tr>
+        <tr>
+          <td>Violin</td>
+          <td>String instrument</td>
+          <td>Children's violin; $50-$500. Advanced instruments; $600-$5,000. Professionals; $3,000-$1M.</td>
+        </tr>
+        <tr>
+          <td>Guitar</td>
+          <td>String instrument</td>
+          <td>Beginner guitars; $100-$400. Intermediate; $400-$900.</td>
+        </tr>
+        <tr>
+          <td>Drums</td>
+          <td>Percussion instrument</td>
+          <td>Generally, drum set costs between $300-$1,000.</td>
+        </tr>
+        <tr>
+          <td>Saxophone</td>
+          <td>Woodwind instrument</td>
+          <td>Beginners; $800-$2,700. Intermediate; $2,000-$3,000. Entry-level pros; $3,000+.</td>
+        </tr>
+        <tr>
+          <td>Cello</td>
+          <td>String instrument</td>
+          <td>Beginners; $300-$2,500. A mid-level; $2,500-$10,000, and anything over $10,000 falls into the category of high-quality, professional instruments.</td>
+        </tr>
+        <tr>
+          <td>Clarinet</td>
+          <td>Woodwind instrument</td>
+          <td>Beginners; $500-$1,100. Intermediate, or set-up clarinets; $1,300-$2,800. Entry-level pros; $2,000+.</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br><br><br><br>
+<!-- END OF TABLE 2 EXERCISE -->
+<!-- ------------------------------------------------------------------------ -->
+
+<!-- START OF JUMBOTRON EXERCISE -->
+<a id="jumbo"></a><br><br><br>
+<h1><strong>Jumbotron</strong></h1>
+<div class="jumbotron">
+    <h1 style="color: #333333;">Classical Music</h1>
+    <img src="images/music-notes-clip-art.png" style="width: 100%;" class="rounded" alt="Musical notes floating"><br><br>
+    <p style="color: #333333;">It expresses the deepest thoughts of our civilization. Through their music, composers paint a picture of the society and times which they lived. You can experience the greatness and achievements of anotehr generation through its music. The main characterisitcs of classical music ephasises on beauty, elegance and balance.</p>
+  </div>
+  <br><br><br><br><br>
+<!-- END OF JUMBOTRON EXERCISE -->
+
+<!-- ------------------------------------------------------------------------ -->
+<!-- START OF COLLAPSIBLE EXERCISE -->
+<a id="coll"></a><br><br><br>
+<h1><stgrong>5 Reasons Why We Listen to Music</stgrong></h1>
+<p>We usually listen to music to attain specific goals.</p>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#keys">Key Points</button><br>
+<div id="keys" class="collapse"><br>
+  <ul style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <li style="color: #ffffff;">Listeners turn on music because they are motivated by specific goals.</li>
+    <li style="color: #ffffff;">Music plays an important role in human well-being and health.</li>
+    <li style="color: #ffffff;">Music can serve as an intervention to reduce stress.</li>
+  </ul>
+</div><br>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#1">1. Musical pleasure</button><br>
+<div id="1" class="collapse" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><br>
+  <p>The key reason people listen to music lies in the reward center of the brain. Listening to pleasurable music activates areas of the reward system. The same brain-chemical system that enables feelings of pleasure from sex, recreational drugs, and food is also critical to experiencing musical pleasure. Musical pleasure arises when a patter is interrupted in some way. Listeners experience strong emotions when something unexpected happens. However, not everyone experiences intense emotional responses to music. Roughly 2% of the general population do not experience chills. This incapacity to derive pleasure specifically from music has been called <strong><em><u>musical anhedonia</u></em></strong> sometimes called tone-deafness).</p>
+</div><br>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#2">2. Mood regulation</button><br>
+<div id="2" class="collapse" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><br>
+  <p>Music provides a means of escape. It distracts our minds from the outside world. The use of music as background entertainment serves to get us into a positive mood or to become more alert. Music can relax the body because brain waves are able to synchronize with the rhythm of a song. People’s moods can reflect what they choose to listen to. Fast or energetic music may make people feel alert and pumped, while slow music calms them down.</p>
+</div><br>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#3">3. Nostalgia</button><br>
+<div id="3" class="collapse" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><br>
+  <p>Music is one of the strongest means for evoking feelings of nostalgia. Listening to music that was played a lot during a significant life event (e.g., a family celebration) many years ago can trigger a deeply nostalgic emotional experience. The feeling is not the music, but in what it reminds us. Maybe we have just come to hear a particular song as sad because we have learned to associate it with an experience of loss.</p>
+</div><br>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#4">4. Aesthetic pleasure</button><br>
+<div id="4" class="collapse" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><br>
+  <p>Listening to music is also explained by the aesthetic impact of music: enjoyment, being moved or inspiring. Subjectively is central to aesthetic responses. A piece of music that is aesthetically appealing to one person can be repulsive to another. These differences come from personal experience and the attitude toward the music, and the current mood. The aesthetic experience also involves the context, such as the external physical environment surrounding the individual during a musical activity.</p>
+  <p>For example, listening experience changes depending on whether it is consumed alone or with peers, in a concert hall, or at home.</p>
+</div><br>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#5">5. Identity motive</button><br>
+<div id="5" class="collapse" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><br>
+  <p>People can use music to express their identity and values to others. Music helps us to show that we belong to a given social group. Music is part of who we are. For example, listening to innovative music can serve to communicate the belief that one is creative and unconventional.</p>
+</div><br>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#credits">References</button><br>
+<div id="credits" class="collapse" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><br>
+  <p>Schäfer T (2016) <em>The Goals and Effects of Music Listening and Their Relationship to the Strength of Music Preference.</em> PLoS ONE 11(3): e0151634.</p>
+</div><br><br><br><br><br>
+
+<!-- END OF COLLAPSIBLE EXERCISE -->
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- START OF CARDS EXERCISE -->
+<a id="cards"></a><br><br><br>
+<h1><strong>Cards</strong></h1>
+<div class="card-columns">
+  <div class="card bg-primary">
+    <div class="card-body text-center">
+      <figure>
+        <figcaption class="card-text" style="color: #ffffff;"><strong>Für Elise</strong></figcaption><br>
+        <audio class="card-audio" controls src="images/audios/Beethoven-Fr-Elise.mp3">Your browser does not support the <code>audio</code> element.
+        </audio>
+      </figure>
+      <p class="card-text"><em>(Click on the play button to listen.)</em></p>
+      <p class="card-text">Originally composed by <strong>Beethoven.</strong></p>
+      <p class="card-text">Musically, it is a five-part rondo with the form ABACA. It is in the key of A minor, which gives it a sad or wistful sound, full of regret and longing. The repeating A section is the most recognised part of Für Elise. It is the easiest section to learn and play.</p>
+    </div>
+  </div>
+  <div class="card bg-warning">
+    <div class="card-body text-center">
+      <figure>
+        <figcaption class="card-text" style="color: #262626;"><strong>Rondo Alla Turca (<em>"Turkish Rondo"</em> or <em>"Turkish March"</em>)</strong></figcaption><br>
+        <audio class="card-audio" controls src="images/audios/Mozart-Rondo-Alla-Turca-Turkish.mp3" style="color: #262626;">Your browser does not support the <code>audio</code> element.
+        </audio>
+      </figure>
+      <p class="card-text" style="color: #262626;"><em>(Click on the play button to listen.)</em></p>
+      <p class="card-text" style="color: #262626;">Originally composed by <strong>Mozart.</strong></p>
+      <p class="card-text" style="color: #262626;">It is often heard on its own and is one of Mozart's best-known piano pieces. Mozart himself titled the rondo "Alla turca". It imitates the sound of Turkish Janissary bands, the music of which was much in vogue at that time. Alla Turca is a Rondo, which means that it has a tuneful main theme which returns in alteration with contrasting themes. It follows the pattern of ABACA.</p>
+    </div>
+  </div>
+  <div class="card bg-success">
+    <div class="card-body text-center">
+      <figure>
+        <figcaption class="card-text" style="color: #ffffff"><strong>Intermezzo in A Major, Op. 118 No. 2</strong></figcaption><br>
+        <audio class="card-audio" controls src="images/audios/Brahms-Intermezzo-2.mp3">Your browser does not support the <code>audio</code> element.
+        </audio>
+      </figure>
+      <p class="card-text"><em>(Click on the play button to listen.)</em></p>
+      <p class="card-text">Originally composed by <strong>Brahms.</strong></p>
+      <p class="card-text">This piece pulls us into a world of dreamy nostalgia, quiet longing, and majestic, serene beauty. It comes from the set of <em>Six Piano Pieces (Klavierstücke)</em>, Op. 118 from Brahms' "autumnal" late period. Listen to the way those unlikely first three notes set the entire piece in motion. As it unfolds and develops, you may sense that the music is "searching" for a way forward, attempting to find just the "right" note.</p>
+    </div>
+  </div>
+  <div class="card bg-danger">
+    <div class="card-body text-center">
+      <figure>
+        <figcaption class="card-text" style="color: #ffffff"><strong>Caprice for Solo Violin, Op. 1 No. 13</strong></figcaption><br>
+        <audio class="card-audio" controls src="images/audios/Niccol-Paganini-Caprice-for-Solo.mp3">Your browser does not support the <code>audio</code> element.
+        </audio>
+      </figure>
+      <p class="card-text"><em>(Click on the play button to listen.)</em></p>
+      <p class="card-text">Originally composed by <strong>Paganini.</strong></p>
+      <p class="card-text">Nicknamed as <em>Devil's Laughter</em> or <em>Devil's Chuckle</em>, is one of Paganini's renowned 24 Caprices for Solo Violin. It is the only one of the suite that is in the key of B-flat major.</p>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <div class="card-body text-center">
+      <figure>
+        <figcaption class="card-text" style="color: #262626;"><strong>Gloria in D</strong></figcaption><br>
+        <audio class="card-audio" controls src="images/audios/Gloria-Vivaldi.mp3" style="color: #262626;">Your browser does not support the <code>audio</code> element.
+        </audio>
+      </figure>
+      <p class="card-text" style="color: #262626;"><em>(Click on the play button to listen.)</em></p>
+      <p class="card-text" style="color: #262626;">Originally composed by <strong>Vivaldi.</strong></p>
+      <p class="card-text" style="color: #262626;">Vivaldi wrote three choral settings of the Gloria, although only two of them survive. It's the D major RV 589, from around 1715, that's best known today. Rediscovered in the 20th century, along with much of the Baroque composer's sacred music, it's Vivaldi’s most popular sacred piece, dramatic, uplifting and joyful.</p>
+    </div>
+  </div>
+  <div class="card bg-info">
+    <div class="card-body text-center">
+      <figure>
+        <figcaption class="card-text" style="color: #ffffff;"><strong>String Quartet No. 3 in G Major: II. Larghetto</strong></figcaption><br>
+        <audio class="card-audio" controls src="images/audios/String-Quartet-No-3-in-G-Major-I.mp3">Your browser does not support the <code>audio</code> element.
+        </audio>
+      </figure>
+      <p class="card-text"><em>(Click on the play button to listen.)</em></p>
+      <p class="card-text">Originally composed by <strong>Campagnoli.</strong></p>
+      <p class="card-text">String quartets came into their own in the latter half of the 18th century, and this brand new genre became an irresistible temptation to many composers, not least the young Italian Bartolomeo Campagnoli. The six quartets featured on this disc are bursting with vitality and innovation, as Campagnoli's penchant for playful melodic lines (especially in the first vioiln) comes thrillingly to the fore. The composer's roots in northern Italy, particulary in Padua and Florence, were carried with him as he travelled around northern Europe, settling at various points in Stockholm, Dresden and Hanover. This led to Campagnoli’s own assertion that he combined ‘German learnedness with Italian soul’, a truly pleasurable mixture perfectly suited to the string quartet genre.</p>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<!-- END OF CARDS EXERCISE -->
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- START OF IMAGE SHAPES EXERCISE -->
+<a id="imgshapes"></a><br><br><br>
+<h1><strong>Image Shapes</strong></h1>
+<p></p>
+
+<h3>Hilary Hahn</h3>
+<img src="images/modern-classical-musicians/hilary-hahn.jpg" class="rounded-circle" alt="Hilary Hahn profile" width="300%" height="300px">
+<p>Born on the 27th November 1979, Hilary Hahn is an American violinist. She has perfromed throughout the world as a soloist with leading orchestras and conductors and as a recitalist. She attended <em>Curtis Institute of Music</em> from 1990-1999.</p>
+<br>
+<h3>Curtis Institute of Music</h3>
+<img src="images/modern-classical-musicians/CIM.jpg" class="img-thumbnail" alt="Curtis Institute of Music" width="800px" height="50px">
+<p><strong>Location:</strong> Philadelphia, Pennsylvania, United States</p>
+<p>The Curtis Institute of Music is a private conservatory in Philadelphia offering courses of study leading to a performance diploma, Bachelor of Music, Master of Music in opera, or Professional Studies Certificate in opera.</p>
+<p>In 1990, at age 10, Hahn was admitted to the Curtis Institute of Music in Philadelphia, where she studies with Jascha Brodsky for 7 years. She learned the études of Kreutzer, Ševčík, Gaviniès and Rode, Paganini's Caprices, 28 violin concertos, and chamber works and assorted showpieces.</p>
+<br>
+<h3>1865 J.B. Vuillaume (Alard Stradivarius loose reproduction)</h3>
+<img src="images/modern-classical-musicians/Stradivarius2.jpg" class="rounded" alt="Stradivarius Violin">
+<p>The Stradivarius violin is one of the instruments that Hahn uses. A Stradivarius (often known as a Strad) is one of the violins, violas, cellos and other string instruments built by members of the Italian family Stradivari, particularly Antonio Stradivari (Latin: Antonius Stradivarius), during the 17th and 18th centuries.</p>
+<p>The Strads are renowned for their supposedly superior sound when compared to other instruments. This has resulted in numerous studies hunting for a scientific reason for why Strads sound so god.</p>
+<p>Stradivari violins from 1698-1709 usually have a body length of 353-355mm, upper bouts between 166mm and 168mm, lower bouts of 205mm.</p>
+<p>The highest price paid for a Stradivarius violin is $16 million (£9.5 million). A rare viola made by the Italian artisan Antonio Stradivari in 1719 that will be sold by Sotheby's in a sealed bid auction in June is valued at $45 million (£27 million).</p>
+<br><br><br>
+<!-- END OF IMAGE SHAPES EXERCISE -->
+<!-- ----------------------------------------------------------------- -->
+
+<!-- START OF MODAL EXERCISE -->
+<a id="mod"></a><br><br><Br>
+<h1>Piano & Violin Brands</h1>
+<p>There are many other brands out there that are also of good quality and best suited in your level and they may cost more than you'll ever know. The following are examples of two of the best brands for both instruments that you should know.</p>
+<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#yamaha">Yamaha</button>
+<!-- The modal -->
+<div class="modal" id="yamaha">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal header -->
+      <div class="modal-header">
+        <h4 class="modal-title" style="color:#262626">Yamaha</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p style="color: #262626">Founded in 1900 by Torakusu Yamaha, the company is the world's largest piano manufacturer today. About 60 years after its creation, the company established itself in the US and by 1965, it was already producing more pianos than any other manufacturer.</p>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bosen">Bösendorfer</button>
+<!-- The modal -->
+<div class="modal" id="bosen">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal header -->
+      <div class="modal-header">
+        <h4 class="modal-title" style="color:#262626">Bösendorfer</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p style="color: #262626">Bösendorfer is an Austrian piano manufacturer and, since 2008, a wholly owned subsidiary of Yamaha Corporation. Bösendorfer is unusual in that it produces 97-and 92-key models in addition to instruments with standard 88-key keyboards.</p>
+        <p style="color: #262626"><strong>Parent organisation:</strong> Yamaha Corporation</p>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sten">Stentor</button>
+<!-- The modal -->
+<div class="modal" id="sten">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal header -->
+      <div class="modal-header">
+        <h4 class="modal-title" style="color:#262626">Stentor</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p style="color: #262626">Stentor is another name that people associate with <strong>quality and consistenscy</strong>.</p>
+        <p style="color: #262626">A make of <strong>student</strong> and <strong>orchestral</strong> violins, this brand provides musicians with instruments for all levels. Carved from solid tonewoods, Stenor violins focus on details. Individually, <em>"thicknessed"</em> for superior sound quality, they're described as <strong>strong, balanced,</strong> and <strong>consistent.</strong></p>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cremona">Cremona</button>
+<!-- The modal -->
+<div class="modal" id="cremona">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal header -->
+      <div class="modal-header">
+        <h4 class="modal-title" style="color:#262626">Cremona</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <p style="color: #262626">Cremona is a city in Italy known for its <b>rich history</b> in violin crafting. It's the place where Stradivari made his violins, and this brand stays true to traditional manufacturing methods, offering a selection of stringed instruments for <b>beginners, masters,</b> and <b>professionals.</b></p>
+        <p style="color: #262626">The bran's violins are highly regarded for their tone quality similar to iconis violins from the same area.</p>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+<!-- END OF MODAL EXERCISES -->
+<!-- ----------------------------------------------------------------- -->
+
+<a id="media"></a><br><br><br>
+
+<div class="container mt-3">
+  <h1>Comment section</h1>
+  <p>Please be discreet with language use.</p><br>
+  <div class="media border p-3 rounded" style="background-color: #ffffff;">
+    <img src="images/porro.jpg" alt="Porro" class="mr-3 mt-3 rounded-circle" style="width:60px; height: 60px;">
+    <div class="media-body">
+      <h5 style="color: #262626">Tom C. <small><small><i style="color: #999999"> Posted on June 5, 2022 <small> 12:00</small></i></small></small></h5>
+      <p style="color: #262626; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">No matter how good or bad you are at playing an instrument, at the end of the day we are all still human beans.</p>
+      <div class="media p-3">
+        <img src="images/porro.jpg" alt="Porro" class="mr-3 mt-3 rounded-circle" style="width:45px; height: 45px;">
+        <div class="media-body">
+          <h5 style="color: #262626">Tom C. <small><small><i style="color: #999999"> Posted on June 5, 2022 <small> 12:03</small></i></small></small></h5>
+          <p style="color: #262626; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">*Ehem* Correction, I meant beings, not "beans".</p>
+        </div>
+      </div>
+      <div class="media p-3">
+        <img src="images/chibi.jpg" alt="Chibi asleep" class="mr-3 mt-3 rounded-circle" style="width:45px; height: 45px;">
+        <div class="media-body">
+          <h5 style="color: #262626">Jerry M. <small><small><i style="color: #999999"> Posted on June 5, 2022 <small> 12:30</small></i></small></small></h5>
+          <p style="color: #262626; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Yes, and together we will rice.</p>
+        </div>
+      </div>
+      <div class="media p-3">
+        <img src="images/anime-pfp.jpg" alt="Random anime girl" class="mr-3 mt-3 rounded-circle" style="width:45px; height: 45px;">
+        <div class="media-body">
+          <h5 style="color: #262626">Cat memes <small><small><i style="color: #999999"> Posted on June 6, 2022 <small> 00:00</small></i></small></small></h5>
+          <p style="color: #262626; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Lettuce pray</p>
+        </div>
+      </div>
+      <div class="media p-3">
+        <img src="images/gudetama.png" alt="Gudetama" class="mr-3 mt-3 rounded-circle" style="width:45px; height: 45px;">
+        <div class="media-body">
+          <h5 style="color: #262626">Lazy Egg <small><small><i style="color: #999999"> Posted on June 6, 2022 <small> 02:10</small></i></small></small></h5>
+          <p style="color: #262626; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Ramen</p>
+        </div>
+      </div>
+      <div class="media p-3">
+        <img src="images/my-pfp.jpg" alt="Sherphylle Clapano" class="mr-3 mt-3 rounded-circle" style="width:45px; height: 45px;">
+        <div class="media-body">
+          <h5 style="color: #262626">Sherph K.C. <small><small><i style="color: #999999"> Posted on June 6, 2022 <small> 13:15</small></i></small></small></h5>
+          <p style="color: #262626; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">This is why I like to check the comment section sometimes lol.</p>
+         </div> 
+      </div>
+    </div>
+  </div>
+</div><br><br><br><br>
+<!-- END OF MEDIA OBJECT EXERCISES -->
+<!-- ---------------------------------------------------------------------------------------- -->
+
+<!-- START OF TOOLTIP EXERCISES -->
+<a id="Ttip"></a><br><br><br>
+  <h1>Tooltip Example</h1>
+  <p>Without having to look at each of them, pick which one you want to hover over and that will be your the nickname your friends will be using for the whole day.</p>
+  <button type="button" class="btn btn-primary" data-toggle="tooltip" title="Queen Meat!" data-placement="left">Hover over me #1</button>
+  <br><br><br>
+  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Big Chungus!">Hover over me #2</button>
+  <br><br><br>
+  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Gucchi Nugget!">Hover over me #3</button>
+  <br><br><br>
+  <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Cadbury Jr.!">Hover over me #4</button>
+
+
+<br><br><br><br>
+<!-- END OF TOOLTIP EXERCISE -->
+<!-- --------------------------------------------------------------------------------------- -->
+
+<!-- START OF POPOVER EXERCISE -->
+<a id="pop"></a><br><br>
+<div class="container mt-4">
+<h1>Popover Example</h1>
+<p>Information of two types of music; Classical and Modern.</p>
+<button type="button" class="btn btn-primary" data-toggle="popover" data-placement="right" title="Modern Music" data-content="The defining feature of modern music (and modern art generally) is the breaking-down of all traditional aesthetic conventions, thereby unleashing complete freedom in all aesthetic dimensions, including melody, rhythm, and chord progression.">Click on popover #1</button>
+<br><br><br>
+<button type="button" class="btn btn-primary" data-toggle="popover" data-placement="top" title="Modern Music vs Classical Music" data-content="Classical pieces are generally more complex than modern songs and they stress on the beauty of their music while some modern songs focus more on how hard-hitting or rhythmically strong a song can be. Modern music makes much more use of modern instruments such as synthesizers, electric guitars, and electronic drums.">Click on popover #2</button>
+<br><br><br>
+<button type="button" class="btn btn-primary" data-toggle="popover" data-placement="bottom" title="Differences between Classical & Popular musics" data-content="The harmonies in classical music are more likely to be functional, more contrary motion is employed, and modulation is more common. Although popular music employs rhythms not found in classical music, on the whole there is less rhythmic variety in popular music than there is in classical.">Click on popover #1</button>
+</div>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+  </div><!-- container -->
+
+<!-- START OF FOOTER EXERCISE -->
+<a id="footer"></a>
+<div class="footer">
+  <div class="footer-content">
+  <div class="footer-bottom">
+    &copy; Victoria University | VIT1101 - Web Development | Designed by Sherphylle Clapano s8012380 | June 6, 2022
+  </div>
+</div>
+
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $(function(){
+      $('[data-toggle="popover"]').popover();
+    } );
+  </script>
+
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+  </script>
+
+</body>
+
+</html>
