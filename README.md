@@ -1,6 +1,6 @@
 # Bootstrap Exercise Portfolio Assignment
 **Tools:** *Visual Studio Code (VSCode)* <br><br>
-The purpose of the assignment is to complete a range of exercises related to Bootstrap subject matter. Theses exercises are listed below, and will then bring them all together as one Bootstrap site which will in turn become a Portfolio of the work that have been completed.
+The purpose of the assignment is to complete a range of exercises related to Bootstrap subject matter. These exercises are listed below, and will then bring them all together as one Bootstrap site which will in turn become a Portfolio of the work that have been completed.
 
 This assignment can be used to bring together and showcase all the Bootstrap exercises that have been completed as one "Bootstrap web site".
 
