@@ -41,15 +41,16 @@ This will form the framework for the remainder of the Bootstrap Portfolio.
 <img width="701" alt="image" src="https://github.com/SherphylleKC/BootstrapProj_Classical-Music/assets/114561089/81d032b0-35fc-4db9-92eb-f60411fca329"> 
 <br>
 <img width="851" alt="image" src="https://github.com/SherphylleKC/BootstrapProj_Classical-Music/assets/114561089/eb7269ad-a7cf-40f3-ad28-b70fbb288a27">
-
 <br><br>
 
 **More** Section: <br>
 Here I can show additional exercises so that my Navbar is not cluttered.
 <br><br>
 <img width="238" alt="image" src="https://github.com/SherphylleKC/BootstrapProj_Classical-Music/assets/114561089/8bf7078c-2f54-46b7-93c0-b43f98e8ccf4">
-<br><br><br>
-Footer <br><br>
+<br><br>
+
+**Footer** Section: <br>
+
 <img width="463" alt="image" src="https://github.com/SherphylleKC/BootstrapProj_Classical-Music/assets/114561089/23810d68-a893-484e-b2cb-236fe9ca77c6">
 
 
